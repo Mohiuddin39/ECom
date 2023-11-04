@@ -1,7 +1,5 @@
 export const getProducts = async () => {
-  const res = fetch("https://jsonserver.reactbd.com/amazonpro", {
-    cache: "no-cache",
-  });
+  const res = fetch("https://jsonserver.reactbd.com/amazonpro", {});
   if (!(await res).ok) {
     throw new Error("Failed to Fetch");
   }
@@ -11,9 +9,7 @@ export const getProducts = async () => {
 export const getPhones = async () => {
   const res = await fetch(
     "https://jsonserver.reactbd.com/amazonpro/category/phone",
-    {
-      cache: "no-cache",
-    }
+    {}
   );
 
   if (!res.ok) {
@@ -25,9 +21,7 @@ export const getPhones = async () => {
 export const getPhoneCases = async () => {
   const res = await fetch(
     "https://jsonserver.reactbd.com/amazonpro/category/phone case",
-    {
-      cache: "no-cache",
-    }
+    {}
   );
 
   if (!res.ok) {
@@ -39,9 +33,7 @@ export const getPhoneCases = async () => {
 export const getWatches = async () => {
   const res = await fetch(
     "https://jsonserver.reactbd.com/amazonpro/category/watch",
-    {
-      cache: "no-cache",
-    }
+    {}
   );
 
   if (!res.ok) {
@@ -53,9 +45,7 @@ export const getWatches = async () => {
 export const getAccessories = async () => {
   const res = await fetch(
     "https://jsonserver.reactbd.com/amazonpro/category/accessories",
-    {
-      cache: "no-cache",
-    }
+    {}
   );
 
   if (!res.ok) {
